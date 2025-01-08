@@ -1,0 +1,22 @@
+{
+  "name": "Technical Assessment",
+  "description": "Technical Assessment",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://areg.appfolio.com/listings",
+        "http://areg.appfolio.com/listings"
+      ],
+      "js": ["firstScript.js"]
+    },
+    {
+      "matches": [
+        "https://areg.appfolio.com/listings/detail/*",
+        "http://areg.appfolio.com/listings/detail/*"
+      ],
+      "js": ["secondScript.js"]
+    }
+  ]
+}
