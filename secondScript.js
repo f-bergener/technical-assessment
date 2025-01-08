@@ -18,6 +18,7 @@ for (const image of largeImages) {
   image.setAttribute('src', 'https://placecats.com/300/200');
 }
 
+// Update the images so the cat images appear when you click into them
 const swipeBoxElements = document.getElementsByClassName('swipebox');
 
 for (const element of swipeBoxElements) {
