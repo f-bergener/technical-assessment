@@ -6,17 +6,12 @@
   "content_scripts": [
     {
       "matches": [
-        "https://areg.appfolio.com/listings",
-        "http://areg.appfolio.com/listings"
+        "*://areg.appfolio.com/listings/",
+        "*://areg.appfolio.com/listings",
+        "*://areg.appfolio.com/listings/detail/*"
       ],
-      "js": ["firstScript.js"]
-    },
-    {
-      "matches": [
-        "https://areg.appfolio.com/listings/detail/*",
-        "http://areg.appfolio.com/listings/detail/*"
-      ],
-      "js": ["secondScript.js"]
+      "js": ["index.js"],
+      "run_at": "document_end"
     }
   ]
 }
